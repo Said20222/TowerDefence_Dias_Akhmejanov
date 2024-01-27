@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -10,7 +8,6 @@ public abstract class Enemy : MonoBehaviour, IEnemy
     public event Action<float> OnEnemyKilled;
 
     [SerializeField] private NavMeshAgent _agent;
-    [SerializeField] private Transform _moveTarget;
     [SerializeField] private Image _healthBar; 
     [SerializeField] private float _health;
 
